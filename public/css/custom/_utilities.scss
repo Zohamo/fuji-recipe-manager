@@ -1,0 +1,101 @@
+/**
+ * Bouton "retour en haut"
+ */
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10000;
+}
+
+/**
+ * Curseur
+ */
+
+.cursor-help {
+  cursor: help !important;
+}
+
+.cursor-move,
+.handle,
+[draggable] {
+  cursor: move;
+}
+
+.cursor-pointer,
+[data-bs-toggle="popover"] {
+  cursor: pointer;
+}
+
+// Formulaire
+
+.form-group.required .control-label:after {
+  content: "*";
+  color: $red;
+  font-weight: bold;
+}
+
+.form-hint {
+  text-align: right;
+  font-size: 0.8em;
+  color: rgba(var(--bs-body-color-rgb), 0.65);
+  margin-bottom: 0;
+}
+
+// Lien
+
+a .fa,
+a:hover .fa,
+a:active .fa,
+a:visited .fa,
+a:link .fa {
+  color: initial;
+  text-decoration: none;
+}
+
+// Liste
+
+.list-style-folder {
+  list-style-image: url("../img/icons/folder-solid.svg");
+}
+.list-style-tree {
+  list-style: none;
+  li::before {
+    content: "\02514";
+    margin-right: 0.5rem;
+    color: $gray-100;
+  }
+}
+
+// Spinner
+
+.spinner-fullsize {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .spinner-border {
+    border-width: 10px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+// Typographie
+
+.break-word {
+  overflow-wrap: anywhere;
+}
+
+.page-title {
+  margin: 1.5rem 0;
+  font-size: 1.75rem;
+}

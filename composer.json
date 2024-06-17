@@ -1,0 +1,19 @@
+{
+  "name": "zohamo/fuji-recipe-manager",
+  "description": "",
+  "version": "0.1.0",
+  "type": "project",
+  "readme": "README.md",
+  "authors": [
+    {
+      "name": "Mathias Mille",
+      "email": "mathias.mille@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.5",
+    "symfony/var-dumper": "^5.4",
+    "vlucas/phpdotenv": "^5.5"
+  }
+}

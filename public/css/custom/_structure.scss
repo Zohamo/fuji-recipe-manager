@@ -1,0 +1,16 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 90px; /* ajusté en JS selon la hauteur du header */
+  background-color: $gray-100;
+  transition: padding-top 250ms ease-out;
+}
+
+.main-footer {
+  z-index: 500;
+  color: rgba(255, 255, 255, 0.55);
+}

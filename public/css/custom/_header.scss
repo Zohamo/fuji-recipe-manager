@@ -1,0 +1,91 @@
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .navbar-brand {
+    color: $white;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  a.nav-link {
+    color: $gray-500;
+    padding-top: 1rem;
+    padding-bottom: calc(1rem - 3px);
+    border-bottom: 3px solid transparent;
+    font-weight: 500;
+    &:active,
+    &:hover,
+    &.active {
+      color: $navbar-dark-active-color;
+      padding-top: 1rem;
+      padding-bottom: calc(1rem - 3px);
+      border-bottom-color: $primary;
+    }
+  }
+
+  // Dropdown
+  .dropdown-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $gray-500;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+
+  // Recherche
+  .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba($secondary, 0.5);
+  }
+
+  .nav-search {
+    #search {
+      color: $white;
+      background-color: $dark;
+      border-color: $gray-700;
+      border-right-width: 0;
+    }
+    #search:focus {
+      color: $dark;
+      background-color: $light;
+      border-color: $gray-100;
+    }
+    #search::placeholder {
+      color: $gray-500;
+    }
+    [type="submit"] {
+      border-color: $gray-700;
+      border-left-color: transparent;
+      background-color: $dark;
+      color: $gray-400;
+      border-left-width: 0;
+    }
+    [type="submit"]:active,
+    [type="submit"]:focus,
+    [type="submit"]:hover {
+      color: $light;
+    }
+  }
+
+  // Utilisateur + Aide
+  #userDropdown,
+  .navbar .btn-help {
+    padding-top: 0.75rem;
+    padding-bottom: 0;
+  }
+  #userDropdown.dropdown-toggle::after {
+    display: none;
+  }
+  a#userDropdown.nav-link:active,
+  a#userDropdown.nav-link:hover,
+  a#userDropdown.nav-link.active,
+  a.btn-help.nav-link:active,
+  a.btn-help.nav-link:hover,
+  a.btn-help.nav-link.active {
+    border-bottom-color: transparent;
+  }
+}

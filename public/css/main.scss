@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/_functions";
+// Insérer les variables ici, elles écraseront celles de Bootstrap
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/_mixins";
+
+// Ajout de types de couleurs personnalisées
+$custom-colors: ();
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "custom/buttons";
+@import "custom/footer";
+@import "custom/header";
+@import "custom/structure";
+@import "custom/utilities";

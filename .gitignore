@@ -1,0 +1,9 @@
+batch/out/*
+cache/*
+logs/*
+vendor/*
+!**/.htaccess
+!**/.gitkeep
+.scannerwork
+node_modules
+sonar-project.properties
