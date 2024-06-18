@@ -8,14 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto flex-wrap">
-                <li class="nav-item">
-                    <a class="nav-link <?= activeLink('accueil') ?>" href="<?= url() ?>" data-test="link-accueil">
-                        Accueil
-                    </a>
-                </li>
-            </ul>
-            <div class="flex-shrink-0 d-md-flex align-items-center">
+            <div class="flex-shrink-0 ms-auto d-md-flex align-items-center">
                 <!-- Recherche -->
                 <form class="form-horizontal form-recherche mb-0" method="POST" action="<?= url() ?>/recherche" role="form">
                     <div class="nav-search my-3 my-md-0 mx-lg-3">

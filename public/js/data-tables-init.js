@@ -30,10 +30,6 @@ jQuery(function () {
       "<tr>" +
       "<'d-print-none d-md-flex justify-content-between align-items-center' l i p>",
     buttons: [
-      { extend: "copy", exportOptions },
-      { extend: "excel", exportOptions },
-      { extend: "pdf", exportOptions },
-      { extend: "print", exportOptions },
       {
         extend: "searchPanes",
         config: {
@@ -43,7 +39,6 @@ jQuery(function () {
         },
       },
     ],
-    language: { url: appUrl + "/public/vendor/data-tables/fr-FR.json" },
     lengthMenu: [
       [10, 25, 50, -1],
       [10, 25, 50, "Tout"],

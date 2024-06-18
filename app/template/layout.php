@@ -18,9 +18,6 @@
 
     <header class="main-header fixed-top d-print-none order-0">
         <?php include path('template') . "/components/header-navbar.php"; ?>
-        <?php if (!activeLink('accueil')) : ?>
-            <?php include path('template') . "/components/header-breadcrumb.php"; ?>
-        <?php endif ?>
     </header>
 
     <main class="pb-5 mb-auto order-1">

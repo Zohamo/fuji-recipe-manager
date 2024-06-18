@@ -15,10 +15,7 @@ use Core\Router;
  */
 
 // Route par défaut
-Router::get("", "AccueilController", "index");
-
-// Suppression de la session Utilisateur
-Router::get("deconnexion", "AccueilController", "deconnexion");
+Router::get("", "RecipeController", "index");
 
 // Recherche
 Router::get("recherche", "RechercheController");
